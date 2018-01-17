@@ -1,0 +1,18 @@
+body {
+    
+    background:$bg;
+    font-size:1em;
+    font-family:$sans-serif;
+    
+}
+
+a {
+    
+    transition:0.3s;
+    
+    &:hover, &:active, &:focus {
+        text-decoration: none;
+        color:$purple;
+    }
+    
+}
