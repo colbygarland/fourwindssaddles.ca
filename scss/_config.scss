@@ -1,15 +1,20 @@
 $bg: #ececec;
 $teal: #53cbdc;
 $purple: #b7739d;
+$primary: $teal;
+$secondary: $purple;
 
 $sans-serif:'Nunito', sans-serif;
 $serif:'Abril Fatface', cursive;
+$font-body:$serif;
+$text-color:#111;
 
 body {
     
-    background:$bg;
-    font-size:1em;
-    font-family:$sans-serif;
+  background:$bg;
+  font-size:1em;
+  font-family:$sans-serif;
+  overflow-x:hidden;
     
 }
 

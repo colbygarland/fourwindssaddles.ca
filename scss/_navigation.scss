@@ -12,16 +12,6 @@
   margin:0;
   z-index:1090;
 
-  &:before {
-    content:'';
-    height:100%;
-    width:calc(100% - 200px);
-    left:200px;
-    top:0;
-    background:url(../img/pattern.svg);
-    position:fixed;
-  }
-
   > li {
 
     width:200px;
@@ -81,6 +71,10 @@
 
 }
 
+.menu {
+  display:none; // hide desktop menu
+}
+
 // DESKTOP MENU
 @media (min-width: 992px) {
 
@@ -93,6 +87,10 @@
       justify-content: space-between;
     }
 
+  }
+  
+  .mobile-menu {
+    display:none;
   }
 
   .menu {
@@ -117,7 +115,6 @@
         text-transform:uppercase;
         color:#fff;
         transition:0.3s;
-        font-family:$font-playfair;
       }
 
       &:hover, &:active, &:focus {
