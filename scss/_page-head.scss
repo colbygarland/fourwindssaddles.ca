@@ -3,7 +3,6 @@
 header {
 
   position:relative;
-  padding-top:50px;
 
 }
 
@@ -26,6 +25,13 @@ h1.title, h2.title {
     background-repeat:no-repeat;
     font-size:0;
 
+  }
+  
+  @media (min-width:992px){
+    
+    margin-left:0;
+    display:inline-block;
+    
   }
   
 }

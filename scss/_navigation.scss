@@ -103,6 +103,11 @@
     padding-left:5vw;
     margin:0;
     height:60px;
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:0;
+    z-index:1090;
 
     li {
 
@@ -113,14 +118,14 @@
 
       a {
         text-transform:uppercase;
-        color:#fff;
+        color:$text-color;
         transition:0.3s;
       }
 
       &:hover, &:active, &:focus {
 
         > a {
-          color:$text-color;
+          color:$primary;
         }
 
         ul.children {
@@ -132,7 +137,7 @@
       }
 
       &.current_page_item a {
-        color:$text-color;
+        color:$primary;
       }
 
       ul.children {
@@ -149,6 +154,7 @@
         z-index:1;
         background:$primary;
         padding:10px;
+        min-width:200px;
 
         li {
 
@@ -165,6 +171,16 @@
             font-size:16px;
             text-transform:none;
             font-family:$font-body;
+            transition:0.4s;
+            color:#fff!important;
+          }
+          
+          &:hover, &:active, &:focus, &.current_page_item {
+            
+            a {
+              padding-left:8px;
+            }
+            
           }
 
         }

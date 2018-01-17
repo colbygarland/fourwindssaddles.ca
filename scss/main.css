@@ -2266,8 +2266,7 @@ p {
   line-height: 1.6; }
 
 header {
-  position: relative;
-  padding-top: 50px; }
+  position: relative; }
 
 h1.title, h2.title {
   position: relative;
@@ -2284,6 +2283,10 @@ h1.title, h2.title {
     background-size: contain;
     background-repeat: no-repeat;
     font-size: 0; }
+  @media (min-width: 992px) {
+    h1.title, h2.title {
+      margin-left: 0;
+      display: inline-block; } }
 
 footer {
   background: #53cbdc;
@@ -2522,7 +2525,12 @@ footer {
     padding-bottom: 15px;
     padding-left: 5vw;
     margin: 0;
-    height: 60px; }
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 1090; }
     .menu li {
       margin-left: 15px;
       margin-right: 15px;
@@ -2530,16 +2538,16 @@ footer {
       height: 45px; }
       .menu li a {
         text-transform: uppercase;
-        color: #fff;
+        color: #111;
         transition: 0.3s; }
       .menu li:hover > a, .menu li:active > a, .menu li:focus > a {
-        color: #111; }
+        color: #53cbdc; }
       .menu li:hover ul.children, .menu li:active ul.children, .menu li:focus ul.children {
         opacity: 1;
         visibility: visible;
         top: 45px; }
       .menu li.current_page_item a {
-        color: #111; }
+        color: #53cbdc; }
       .menu li ul.children {
         list-style: none;
         padding: 0;
@@ -2552,7 +2560,8 @@ footer {
         visibility: hidden;
         z-index: 1;
         background: #53cbdc;
-        padding: 10px; }
+        padding: 10px;
+        min-width: 200px; }
         .menu li ul.children li {
           margin: 0;
           margin-bottom: 15px;
@@ -2563,7 +2572,11 @@ footer {
             display: block;
             font-size: 16px;
             text-transform: none;
-            font-family: "Abril Fatface", cursive; } }
+            font-family: "Abril Fatface", cursive;
+            transition: 0.4s;
+            color: #fff !important; }
+          .menu li ul.children li:hover a, .menu li ul.children li:active a, .menu li ul.children li:focus a, .menu li ul.children li.current_page_item a {
+            padding-left: 8px; } }
 .feature-photo {
   margin-left: -15px;
   margin-right: -15px;
@@ -2585,7 +2598,6 @@ footer {
     padding-bottom: 200px;
     text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2); }
     .feature-photo .text-box h1 {
-      font-size: 50px;
       text-transform: uppercase; }
 
 .content {
