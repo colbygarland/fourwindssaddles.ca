@@ -1,0 +1,31 @@
+// Header
+
+header {
+
+  position:relative;
+  padding-top:50px;
+
+}
+
+h1.title, h2.title {
+
+  position:relative;
+  width:280px;
+  height:90px;
+  display:block;
+  margin:0 auto;
+  z-index:1;
+  margin-bottom:40px;
+
+  a {
+
+    height:inherit;
+    width:inherit;
+    background-image:url(../img/);
+    background-size:contain;
+    background-repeat:no-repeat;
+    font-size:0;
+
+  }
+  
+}
