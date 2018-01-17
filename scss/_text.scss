@@ -1,18 +1,53 @@
 body {
     
-    background:$bg;
-    font-size:1em;
-    font-family:$sans-serif;
-    
+  background:$bg;
+  font-family:$sans-serif;
+  font-size:20px;
+  
 }
 
 a {
     
-    transition:0.3s;
-    
-    &:hover, &:active, &:focus {
-        text-decoration: none;
-        color:$purple;
-    }
-    
+  transition:0.3s;
+
+  &:hover, &:active, &:focus {
+      text-decoration: none;
+      color:$purple;
+  }
+
+}
+
+h1, h2, h3 {
+  font-family:$serif;
+}
+
+h1 {
+  font-size: calc(20px + 2.3vw);
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: calc(25px + 1vw);
+  margin-bottom:15px;
+}
+
+h3 {
+  font-size: calc(20px + 1vw);
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: calc(15px + 1vw);
+}
+
+h5 {
+  font-size: calc(16px + 1vw);
+}
+
+h6 {
+  font-size: 22px;
+}
+
+p {
+  line-height:1.6;
 }
