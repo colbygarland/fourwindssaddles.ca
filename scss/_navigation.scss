@@ -152,7 +152,7 @@
         transition:0.4s;
         visibility: hidden;
         z-index:1;
-        background:$primary;
+        @include gradient($primary,$primary-lighter);
         padding:10px;
         min-width:200px;
 

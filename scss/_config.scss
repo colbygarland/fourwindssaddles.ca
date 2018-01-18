@@ -3,6 +3,7 @@ $teal: #53cbdc;
 $purple: #b7739d;
 $primary: $teal;
 $secondary: $purple;
+$primary-lighter:#16decc;
 
 $sans-serif:'Nunito', sans-serif;
 $serif:'Abril Fatface', cursive;
@@ -49,4 +50,11 @@ img {
   display:flex;
   -ms-flex-wrap:wrap;
   flex-wrap:wrap;
+}
+
+@mixin gradient($color1, $color2){
+  background:linear-gradient(
+      to right, 
+      $color1, $color2
+    );
 }
